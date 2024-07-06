@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #5f27cd;
+    padding: 32px 0px;
+    color: #ffffff;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+form{
+    background-color: #c8d6e5;
+    padding: 24px 0px;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    
+    font-size: 2rem;
+    margin-bottom: 32px;
+    color: #353535;
+    
+
+}
+input, button{
+    padding: 8px;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+ul li img{
+    width: 100%;
+}
+.overlay-image-link{
+    padding: 16px;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition:all ease 0.5s;
+}
+
+.overlay-image-link a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.overlay-image-link a:hover{
+    text-decoration: underline;
+    color: #27cd88;
+}
+ul li:hover .overlay-image-link{
+    opacity: 1;
+    
+}
+button{
+    background-color: #27cd88;
+    border: none;
+    color:#ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;    
+}
+#cancelar{
+    background-color: #cd2727;
+}
+#cancelar:hover{
+    background-color: #8a1515;
+}
+
+button:hover{
+    background-color: #1fa56d;
+}
